@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import Header from './components/Header/Header';
+import InputBar from './components/InputBar/InputBar';
+import TasksList from './components/TasksList/TasksList';
+
 import './App.css';
 
 class App extends Component {
@@ -6,7 +10,9 @@ class App extends Component {
     return (
       <div>
 
-        <p> To-do app </p>
+        <Header />
+        <InputBar />
+        <TasksList />
 
       </div>
     );
