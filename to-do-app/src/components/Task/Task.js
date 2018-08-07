@@ -6,9 +6,12 @@ const task = (props) => {
   return(
     <div className="Task">
 
-      <label class="checkBox"> {props.task}
-        <input type="checkbox"  checked={props.status} />
-        <span class="checkMark"> </span>
+      <label className="checkBox"> {props.task}
+        <input
+          type="checkbox"
+          checked={props.checked}
+          onChange={() => props.handleChangeChecked(props.id)} />
+        <span className="checkMark"> </span>
       </label>
 
     </div>
